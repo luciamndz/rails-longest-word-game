@@ -1,0 +1,10 @@
+<h1>Results</h1>
+<% if @include_letters && @valid_word %>
+  <p><%= "Congratulations! #{@word} is a valid English word!" %></p>
+<% elsif @valid_word == false %>
+  <p><%= "Sorry but #{@word} doesn't seem to be a valid English word" %></p>
+<% elsif @include_letters == false %>
+  <p><%= "Sorry! #{@word} can't be made up from #{@letters}" %></p>
+<% else %>
+  <P><%= "algo salio mal"%>
+<% end %>
